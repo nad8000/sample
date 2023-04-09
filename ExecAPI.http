@@ -1,0 +1,8 @@
+# サーバー動作確認用API
+# humao.rest-clientのExtensionが必要
+
+###
+
+GET http://localhost:8000
+
+###
