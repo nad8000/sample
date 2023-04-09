@@ -42,13 +42,13 @@ npm ci
 sqliteの公式サイトからsqlite3をダウンロードし、sample-serverにsqlite3.exeをコピーする。
 <https://sqlite.org/index.html>
 
-sample-serverにsqlite3.exeがある状態でマイグレーションを実行するとsqliteデータベース(sample-test.db)が作成される。
-シードを実行するとデータベースにダミーデータが追加される。（未実装）
+sample-serverにsqlite3.exeがある状態でマイグレーションを実行するとsqliteデータベース(sample-development.db)が作成される。
+シードを実行するとデータベースにダミーデータが追加される。
 
 ```bat
 cd sample-server
-npx sequelize-cli db:migrate --env test  
-npx sequelize-cli db:seed:all --env test  
+npx sequelize-cli db:migrate
+npx sequelize-cli db:seed:all
 ```
 
 VSCodeの「実行とデバッグ」を開き、「Run Client」「Run Server」を実行すると自動で下記URLが開く。

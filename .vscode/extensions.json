@@ -14,5 +14,8 @@
       "MS-CEINTL.vscode-language-pack-ja",
       "DavidAnson.vscode-markdownlint",
       "oderwat.indent-rainbow",
+      "rodrigovallades.es7-react-js-snippets",
+      "christian-kohler.npm-intellisense",
+      "streetsidesoftware.code-spell-checker"
     ]
   }
