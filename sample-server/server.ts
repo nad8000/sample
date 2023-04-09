@@ -1,5 +1,4 @@
 const express = require('express');
-const sqlite3 = require('sqlite3');
 
 // 環境変数読み込み
 require('dotenv').config();
