@@ -27,50 +27,70 @@ sample-server server側
 ## 動作確認の手順
 
 Githubからソースをcloneする。
-各フォルダに移動してnpm ciして必要なモジュールをインストールする。
 
 ```bat
 git clone https://github.com/skrdt/sample.git
-cd sample
+```
+
+各フォルダに移動してnpm ciあるいはnpm installして必要なモジュールをインストールする。
+
+クライアント
+
+```bat
 cd sample-project
 npm ci
-cd ..
+```
+
+サーバー
+
+```bat
 cd sample-server
 npm ci
 ```
+
+## データベースの準備
 
 sqliteの公式サイトからsqlite3をダウンロードし、sample-serverにsqlite3.exeをコピーする。
 <https://sqlite.org/index.html>
 
 sample-serverにsqlite3.exeがある状態でマイグレーションを実行するとsqliteデータベース(sample-development.db)が作成される。
-シードを実行するとデータベースにダミーデータが追加される。
 
 ```bat
 cd sample-server
 npx sequelize-cli db:migrate
+```
+
+シードを実行するとデータベースにダミーデータが追加される。
+
+```bat
+cd sample-server
 npx sequelize-cli db:seed:all
 ```
 
-VSCodeの「実行とデバッグ」を開き、「Run Client」「Run Server」を実行すると自動で下記URLが開く。
+## アクセスURL
+
+VSCodeの「実行とデバッグ」を開き、「Run Client」を実行すると自動で下記URLが開く。
 
 <http://localhost:3000>
 
-サーバー側のURLは下記、アクセスした際に「Hello World! sample server!」と表示されれば正常に動作している。
+サーバー側は「Run Server」を実行する。URLは下記、アクセスした際に「Hello World! sample server!」と表示されれば正常に動作している。
 
 <http://localhost:8000>
+
+## 手動実行する場合
 
 手動で実行する場合はコマンドプロンプトを開き下記を実行する。
 
 クライアント側の起動
 
 ```bat
-cd sample-project
+cd sample-client
 npm start
 ```
 
 サーバー側の起動
 
 ```bat
-cd cdsample-server
+cd sample-server
 node server
 ```
