@@ -4,15 +4,15 @@
       "stylelint.vscode-stylelint",
       "esbenp.prettier-vscode",
       "VisualStudioExptTeam.vscodeintellicode",
-      "derwat.indent-rainbow",
       "vscode-icons-team.vscode-icons",
       "wix.vscode-import-cost",
       "donjayamanne.githistory",
-      "msjsdiag.debugger-for-chrome",
+      "ms-vscode.js-debug",
       "ms-vscode-remote.remote-wsl",
       "firsttris.vscode-jest-runner",
       "humao.rest-client",
       "MS-CEINTL.vscode-language-pack-ja",
       "DavidAnson.vscode-markdownlint",
+      "oderwat.indent-rainbow",
     ]
   }

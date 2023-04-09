@@ -1,6 +1,6 @@
 # 概要
 
-React+Redux+TypeScript+SQLiteを使ってローカルで動く小規模なウェブアプリケーションを作りたい。(作成途中)
+React+Redux+TypeScript+SQLiteを使ってローカルで動く小規模なウェブアプリケーションを作りたい。
 
 ******************************************
 
@@ -10,14 +10,9 @@ sample-document ドキュメント類
 
 - database データベースのドキュメント
 
-sample-project client側
+sample-client client側
 
 - src クライアントサイドのコード
-
-  - actions APIアクセスを行うフォルダ
-  - components tsxなどクライアントのview部分のフォルダ
-  - containers データ、アプリケーションロジックのフォルダ
-  - reducers 共通変数のフォルダ
 
 sample-server server側
 
