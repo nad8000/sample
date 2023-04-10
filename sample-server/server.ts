@@ -1,14 +1,13 @@
-const express = require('express');
+import express from 'express';
+import routes from './src/routes';
 
 // 環境変数読み込み
 require('dotenv').config();
 
-const app = express();
 const port = process.env.PORT || 8000;
 
-app.get('/', (req, res) => {
-  res.send('Hello World! sample server!');
-});
+const app = express();
+app.use('/', routes);
 
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);

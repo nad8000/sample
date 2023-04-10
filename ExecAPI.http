@@ -3,6 +3,12 @@
 
 ###
 
+# Serverルート
 GET http://localhost:8000
+
+###
+
+# サンプルget
+GET http://localhost:8000/sample
 
 ###
