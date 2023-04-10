@@ -1,23 +1,35 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "name": "Run Client",
-        "type": "node",
-        "request": "launch",
-        "cwd": "${workspaceFolder}/sample-client",
-        "runtimeExecutable": "npm",
-        "runtimeArgs": ["start"],
-        "skipFiles": ["<node_internals>/**"],
-        "console": "integratedTerminal"
+  "version": "0.2.0",
+  "compounds":[
+    {
+      "name": "All (Client + Server)",
+      "configurations": ["Client", "Server"],
+      "presentation": {
+        "hidden": false,
+        "group": "",
+        "order": 1
       },
-      {
-        "name": "Run Server",
-        "type": "node",
-        "request": "launch",
-        "runtimeArgs": ["-r", "ts-node/register"],
-        "args": ["${workspaceFolder}/sample-server/server.ts"],
-        "console": "integratedTerminal"
-      },
-    ]
-  }
+      "stopAll": true,
+    },
+  ],
+  "configurations": [
+    {
+      "name": "Client",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/sample-client",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal",
+    },
+    {
+      "name": "Server",
+      "type": "node",
+      "request": "launch",
+      "runtimeArgs": ["-r", "ts-node/register"],
+      "args": ["${workspaceFolder}/sample-server/server.ts"],
+      "console": "integratedTerminal"
+    },
+  ],
+}

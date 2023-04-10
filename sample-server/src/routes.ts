@@ -1,4 +1,3 @@
-
 import { rootHandler, sampleHandler } from './handlers';
 
 const express = require('express');
