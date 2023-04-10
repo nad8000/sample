@@ -1,6 +1,9 @@
 # TagGroups テーブル
 
-|  論理名    |  物理名  |  型  |  null許可  |  備考  |
+|  物理名  |  論理名 |  型  |  null許可  |  備考  |
 | ---- | ---- |  ---  |  ---  |  ---  |
-|  TagId   |  カードID  |  int  |  false  |    |
-|  cardId   |  カードID  |  int  |  false  |    |
+|  ID  |  id   |  string  |  false  |    |
+|  タグID  |  TagId   |  int  |  false  |    |
+|  カードID  |  cardId   |  int  |  false  |    |
+|  作成日時  |  createdAt   |  tinyint  |  false  |    |
+|  更新日時  |  updatedAt   |  date  |  false  |    |
