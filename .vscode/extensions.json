@@ -18,6 +18,7 @@
       "christian-kohler.npm-intellisense",
       "streetsidesoftware.code-spell-checker",
       "formulahendry.auto-rename-tag",
-      "formulahendry.auto-close-tag"
+      "formulahendry.auto-close-tag",
+      "styled-components.vscode-styled-components"
     ]
   }
