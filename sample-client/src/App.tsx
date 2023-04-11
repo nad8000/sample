@@ -4,16 +4,16 @@ import './App.css';
 import styled from 'styled-components';
 
 const Header = styled.header`
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
 `;
 
 const Link = styled.a`
-color: rgb(112, 76, 182);
+  color: rgb(112, 76, 182);
 `;
 
 
