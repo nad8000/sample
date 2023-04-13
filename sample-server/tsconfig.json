@@ -61,7 +61,7 @@
   },
   "include":[
     "src"
-  ],
+, "db.ts"  ],
   "exclude":[
       "./**/*.ts",
   ]
