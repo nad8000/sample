@@ -19,6 +19,8 @@
       "streetsidesoftware.code-spell-checker",
       "formulahendry.auto-rename-tag",
       "formulahendry.auto-close-tag",
-      "styled-components.vscode-styled-components"
+      "styled-components.vscode-styled-components",
+      "dbaeumer.vscode-eslint",
+      "rvest.vs-code-prettier-eslint"
     ]
   }
