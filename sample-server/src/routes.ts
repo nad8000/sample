@@ -1,9 +1,9 @@
-import { rootHandler, sampleHandler } from './handlers';
+import { rootHandler, reportCsvHandler } from './handlers';
 
 const express = require('express');
 const router = express.Router();
 
 router.get('/', rootHandler);
-router.get('/sample', sampleHandler);
+router.get('/TagReport', reportCsvHandler);
 
 export default router;

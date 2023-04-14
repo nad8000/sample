@@ -1,11 +1,25 @@
 import { Request, Response } from 'express';
-import { fetchTags } from '../db';
+import queryToCsv from './common/queryToCSV';
 
+/**
+ * http://localhost:8000/
+ * サーバールート
+ *
+ * @param req リクエスト
+ * @param res レスポンス
+ */
 export const rootHandler = (req: Request, res: Response) => {
   res.send('Hello World! sample server!');
 };
 
-export const sampleHandler = (req: Request, res: Response) => {
-  const Tags = fetchTags();
-  res.send(Tags);
+/**
+ * http://localhost:8000/TagReport
+ * タグCSV作成
+ *
+ * @param req リクエスト
+ * @param res レスポンス
+ */
+export const reportCsvHandler = async (req: Request, res: Response) => {
+  await queryToCsv(`SELECT * From Tags`, 'TagReport');
+  res.send('レポートCSVを作成しました');
 };
