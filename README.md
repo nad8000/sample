@@ -73,7 +73,12 @@ npx sequelize-cli db:seed:all
 
 ## アクセスURL
 
-VSCodeの「実行とデバッグ」を開き、「Run Client」を実行すると自動で下記URLが開く。
+開発にはVisualStdioCodeを使用している。
+「実行とデバッグ」を開き、「All (Client + Server)」を実行するとすべてのリソースが起動する。
+
+## 個別起動
+
+「Run Client」を実行すると自動で下記URLが開く。
 
 <http://localhost:3000>
 
@@ -81,20 +86,3 @@ VSCodeの「実行とデバッグ」を開き、「Run Client」を実行する�
 
 <http://localhost:8000>
 
-## 手動実行する場合
-
-手動で実行する場合はコマンドプロンプトを開き下記を実行する。
-
-クライアント側の起動
-
-```bat
-cd sample-client
-npm start
-```
-
-サーバー側の起動
-
-```bat
-cd sample-server
-node server
-```
