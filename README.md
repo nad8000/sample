@@ -54,20 +54,15 @@ npm ci
 
 ## データベースの準備
 
-sqliteの公式サイトからsqlite3をダウンロードし、sample-serverにsqlite3.exeをコピーする。
-<https://sqlite.org/index.html>
-
-sample-serverにsqlite3.exeがある状態でマイグレーションを実行するとsqliteデータベース(sample-development.db)が作成される。
+sample-serverに移動し、下記のマイグレーションを実行するとsqliteデータベース(sample-development.db)が作成される。
 
 ```bat
-cd sample-server
 npx sequelize-cli db:migrate
 ```
 
 シードを実行するとデータベースにダミーデータが追加される。
 
 ```bat
-cd sample-server
 npx sequelize-cli db:seed:all
 ```
 
