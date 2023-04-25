@@ -21,6 +21,7 @@
       "formulahendry.auto-close-tag",
       "styled-components.vscode-styled-components",
       "dbaeumer.vscode-eslint",
-      "rvest.vs-code-prettier-eslint"
+      "rvest.vs-code-prettier-eslint",
+      "NilsSoderman.batch-runner"
     ]
   }

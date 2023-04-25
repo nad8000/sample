@@ -80,4 +80,3 @@ npx sequelize-cli db:seed:all
 サーバー側は「Run Server」を実行する。URLは下記、アクセスした際に「Hello World! sample server!」と表示されれば正常に動作している。
 
 <http://localhost:8000>
-
