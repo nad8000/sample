@@ -1,27 +1,27 @@
 {
-    "recommendations": [
-      "dbaeumer.vscode-eslint",
-      "stylelint.vscode-stylelint",
-      "esbenp.prettier-vscode",
-      "VisualStudioExptTeam.vscodeintellicode",
-      "vscode-icons-team.vscode-icons",
-      "wix.vscode-import-cost",
-      "donjayamanne.githistory",
-      "ms-vscode.js-debug",
-      "ms-vscode-remote.remote-wsl",
-      "firsttris.vscode-jest-runner",
-      "humao.rest-client",
-      "MS-CEINTL.vscode-language-pack-ja",
-      "DavidAnson.vscode-markdownlint",
-      "oderwat.indent-rainbow",
-      "rodrigovallades.es7-react-js-snippets",
-      "christian-kohler.npm-intellisense",
-      "streetsidesoftware.code-spell-checker",
-      "formulahendry.auto-rename-tag",
-      "formulahendry.auto-close-tag",
-      "styled-components.vscode-styled-components",
-      "dbaeumer.vscode-eslint",
-      "rvest.vs-code-prettier-eslint",
-      "NilsSoderman.batch-runner"
-    ]
-  }
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
+    "VisualStudioExptTeam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "wix.vscode-import-cost",
+    "donjayamanne.githistory",
+    "ms-vscode.js-debug",
+    "ms-vscode-remote.remote-wsl",
+    "firsttris.vscode-jest-runner",
+    "humao.rest-client",
+    "MS-CEINTL.vscode-language-pack-ja",
+    "DavidAnson.vscode-markdownlint",
+    "oderwat.indent-rainbow",
+    "rodrigovallades.es7-react-js-snippets",
+    "christian-kohler.npm-intellisense",
+    "streetsidesoftware.code-spell-checker",
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    "styled-components.vscode-styled-components",
+    "dbaeumer.vscode-eslint",
+    "rvest.vs-code-prettier-eslint",
+    "NilsSoderman.batch-runner"
+  ]
+}
