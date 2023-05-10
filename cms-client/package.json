@@ -1,6 +1,6 @@
 {
-  "name": "sample-client",
-  "version": "0.1.0",
+  "name": "cms-client",
+  "version": "0.0.1",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",

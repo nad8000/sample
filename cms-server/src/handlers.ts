@@ -9,7 +9,7 @@ import queryToCsv from './common/queryToCSV';
  * @param res レスポンス
  */
 export const rootHandler = (req: Request, res: Response) => {
-  res.send('Hello World! sample server!');
+  res.send('Hello World! cms server!');
 };
 
 /**

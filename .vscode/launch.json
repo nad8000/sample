@@ -17,7 +17,7 @@
       "name": "Client",
       "type": "node",
       "request": "launch",
-      "cwd": "${workspaceFolder}/sample-client",
+      "cwd": "${workspaceFolder}/cms-client",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["start"],
       "skipFiles": ["<node_internals>/**"],
@@ -28,7 +28,7 @@
       "type": "node",
       "request": "launch",
       "runtimeArgs": ["-r", "ts-node/register"],
-      "args": ["${workspaceFolder}/sample-server/server.ts"],
+      "args": ["${workspaceFolder}/cms-server/server.ts"],
       "console": "integratedTerminal"
     },
   ],

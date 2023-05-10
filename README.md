@@ -12,15 +12,15 @@ React+Redux+TypeScript+SQLiteを使ってローカルで動く小規模なウェ
 
 ## フォルダ構成
 
-sample-document ドキュメント類
+doc ドキュメント類
 
 - database データベースのドキュメント
 
-sample-client client側
+cms-client client側
 
 - src クライアントサイドのコード
 
-sample-server server側
+cms-server server側
 
 - config sequelizeの設定フォルダ
 - migrations sequelizeのマイグレーション作成用フォルダ
@@ -40,23 +40,29 @@ git clone https://github.com/skrdt/sample.git
 
 各フォルダに移動してnpm ciあるいはnpm installして必要なモジュールをインストールする。
 
+ルートディレクトリ
+
+```bat
+npm ci
+```
+
 クライアント
 
 ```bat
-cd sample-project
+cd cms-project
 npm ci
 ```
 
 サーバー
 
 ```bat
-cd sample-server
+cd cms-server
 npm ci
 ```
 
 ## データベースの準備
 
-sample-serverに移動し、下記のマイグレーションを実行するとsqliteデータベース(sample-development.db)が作成される。
+cms-serverに移動し、下記のマイグレーションを実行するとsqliteデータベース(cms-development.db)が作成される。
 
 ```bat
 npx sequelize-cli db:migrate
