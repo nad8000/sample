@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "ci",
+			"path": "cms-client",
+			"group": "clean",
+			"problemMatcher": [],
+			"label": "npm: ci - cms-client",
+			"detail": "cms-clientのci"
+		},
+		{
+			"type": "npm",
+			"script": "ci",
+			"path": "cms-server",
+			"group": "clean",
+			"problemMatcher": [],
+			"label": "npm: ci - cms-server",
+			"detail": "cms-serverのci"
+		}
+	]
+}
