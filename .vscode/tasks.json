@@ -16,7 +16,7 @@
 			"type": "npm",
 			"script": "ci",
 			"path": "cms-client",
-			"group": "clean",
+			"group": "none",
 			"problemMatcher": [],
 			"label": "npm: ci - cms-client",
 			"detail": "cms-clientのci"
@@ -25,7 +25,7 @@
 			"type": "npm",
 			"script": "ci",
 			"path": "cms-server",
-			"group": "clean",
+			"group": "none",
 			"problemMatcher": [],
 			"label": "npm: ci - cms-server",
 			"detail": "cms-serverのci"
