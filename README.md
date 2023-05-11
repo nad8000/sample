@@ -1,8 +1,6 @@
 # 概要
 
-React+Redux+TypeScript+SQLiteを使ってローカルで動く小規模なウェブアプリケーションを作りたい。
-
-※ヘッドレスCMSを作成してブログ制作に使いたい
+React+Redux+TypeScript+SQLiteを使ってヘッドレスCMSを作成してブログ制作に使いたい
 
 ※一旦データベースはsqliteで作成してあとでmysqlに切り替える予定
 
@@ -39,12 +37,6 @@ git clone https://github.com/skrdt/sample.git
 ```
 
 各フォルダに移動してnpm ciあるいはnpm installして必要なモジュールをインストールする。
-
-ルートディレクトリ
-
-```bat
-npm ci
-```
 
 クライアント
 

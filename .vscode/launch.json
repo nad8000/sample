@@ -27,7 +27,7 @@
       "name": "Server",
       "type": "node",
       "request": "launch",
-      "runtimeArgs": ["-r", "ts-node/register"],
+      "runtimeArgs": ["-r", "${workspaceFolder}/cms-server/node_modules/ts-node/register"],
       "args": ["${workspaceFolder}/cms-server/server.ts"],
       "console": "integratedTerminal"
     },
