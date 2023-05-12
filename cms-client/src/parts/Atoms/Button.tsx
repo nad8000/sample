@@ -3,11 +3,15 @@ import styled from 'styled-components'
 
 const Box = styled.button`
   height: 30px;
-  background-color: #333;
+  background-color: #888;
   color: #fff;
   border-radius: 3px;
   margin: 3px;
   padding: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+  }
 `;
 
 interface ButtonProps {
