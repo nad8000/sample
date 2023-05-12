@@ -1,10 +1,13 @@
 # 概要
 
-React+Redux+TypeScript+SQLiteを使ってヘッドレスCMSを作成してブログ制作に使いたい
+## やりたいこと
 
-※一旦データベースはsqliteで作成してあとでmysqlに切り替える予定
+- React+Redux+TypeScript+SQLiteを使ってヘッドレスCMSを作成してブログ制作に使いたい
+- 最終的にフロントブログ部分はNext.jsで静的生成したい
+- 一旦データベースはSQLiteで作成してあとでMySQLあたりに切り替えたい
+- Docker使いたい、いずれLinux系OSのVPSにデプロイしたい
 
-※管理部分のフロント作成中
+※現在、管理部分のフロント作成中
 
 ******************************************
 
@@ -14,9 +17,9 @@ doc ドキュメント類
 
 - database データベースのドキュメント
 
-cms-client client側
+cms-client 管理画面client側
 
-- src クライアントサイドのコード
+- src メインコード
 
 cms-server server側
 
@@ -24,7 +27,7 @@ cms-server server側
 - migrations sequelizeのマイグレーション作成用フォルダ
 - models sequelizeのモデルフォルダ
 - seeders sequelizeのダミーデータ作成用フォルダ
-- src サーバーサイドのコード
+- src メインコード
 
 ******************************************
 
