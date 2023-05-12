@@ -22,6 +22,5 @@
     "styled-components.vscode-styled-components",
     "dbaeumer.vscode-eslint",
     "rvest.vs-code-prettier-eslint",
-    "NilsSoderman.batch-runner"
   ]
 }
