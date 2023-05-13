@@ -53,7 +53,6 @@ function Index() {
 
   return (
     <>
-      <ButtonAppBar />
       <Contents>
         <button onClick={()=>navigate('/list')}>コンテンツリスト</button>
       </Contents>
@@ -61,35 +60,4 @@ function Index() {
   )
 }
 
-function ButtonAppBar() {  
-  const navigate: NavigateFunction = useNavigate();
-  const Link = styled.a`
-    color: #fff;
-    &:hover {
-      cursor: pointer;
-    }
-  `;
-
-return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            <Link onClick={()=>navigate('/')}>CustomBlog</Link>
-          </Typography>
-          <Button color="inherit">Login</Button>
-        </Toolbar>
-      </AppBar>
-    </Box>
-  );
-}
 export default App;

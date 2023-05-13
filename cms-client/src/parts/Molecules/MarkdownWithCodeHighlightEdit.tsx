@@ -1,6 +1,19 @@
 import React, { useState, ChangeEvent } from 'react';
 import MarkdownWithCodeHighlight from '../Atoms/MarkdownWithCodeHighlight';
-import Textarea from '../Atoms/TextArea';
+import TextAreaContainer from '../Atoms/TextAreaContainer';
+import styled from 'styled-components';
+
+const Box = styled.div`
+  display: flex;
+  .txt {
+    margin-top: 75px;
+    width: 49%;
+  }
+  .md {
+    width: 49%;
+    min-width: auto;
+  }
+`;
 
 function MarkdownWithCodeHighlightEdit() {
   const [text, setText] = useState('');
@@ -10,10 +23,10 @@ function MarkdownWithCodeHighlightEdit() {
   };
 
   return (
-    <div>
-      <Textarea value={text} onChange={handleChange} />
-      <MarkdownWithCodeHighlight>{text}</MarkdownWithCodeHighlight>
-    </div>
+    <Box>
+      <TextAreaContainer outerClassName='txt' value={text} onChange={handleChange} />
+      <MarkdownWithCodeHighlight outerClassName='md'>{text}</MarkdownWithCodeHighlight>
+    </Box>
   );
 }
 

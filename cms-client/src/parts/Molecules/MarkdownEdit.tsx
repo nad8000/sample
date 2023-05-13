@@ -2,6 +2,7 @@ import React, { useState, ChangeEvent } from 'react';
 import MarkdownView from '../Atoms/MarkdownView';
 import Textarea from '../Atoms/TextArea';
 
+/** @deprecated シンタックスハイライトなし */
 function MarkdownEdit() {
   const [text, setText] = useState('');
 
@@ -10,10 +11,10 @@ function MarkdownEdit() {
   };
 
   return (
-    <div>
+    <>
       <Textarea value={text} onChange={handleChange} />
       <MarkdownView>{text}</MarkdownView>
-    </div>
+    </>
   );
 }
 

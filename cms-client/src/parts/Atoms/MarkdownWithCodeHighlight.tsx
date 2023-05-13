@@ -10,28 +10,29 @@ import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascr
 import css from 'react-syntax-highlighter/dist/esm/languages/hljs/css';
 SyntaxHighlighter.registerLanguage('js', javascript);
 SyntaxHighlighter.registerLanguage('css', css);
-const highlightLang = 'JavaScript/CSS'
+const highlightLang = 'js/css'
 
 interface MarkdownWithCodeHighlightProps {
   children: string;
+  outerClassName?: string;
 }
 
-const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ children }) => {
+const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ children, outerClassName='' }) => {
   const Box = styled.div`
-    border: 3px #ccc solid;
-    margin: 10px auto;
-    padding: 5px;
-    width: 80%;
-    min-height: 500px;
-  `;
-  const Title = styled.h2`
-    text-align: center;
-    border: 1px 0px solid #000;
-  `;
-  const SubTitle = styled.div`
-    text-align: center;
-    border: 1px 0px solid #000;
-    text-align: center;
+    .md-view {
+      border: 3px #ccc solid;
+      margin: 10px auto;
+      padding: 5px;
+      background-color: #eee;
+      min-height: 500px;
+    }
+    .title {
+      border: 1px 0px solid #000;
+      margin: 3px;
+    }
+    .center {
+      text-align: center;
+    }
   `;
   
   // コードブロックのレンダリングをカスタマイズ
@@ -44,12 +45,12 @@ const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ c
   };
 
   return (
-    <>
-      <Title>Markdown Preview</Title>
-      <SubTitle>
-        <span>ハイライト可能言語:{highlightLang}</span>
-      </SubTitle>
-      <Box>
+    <Box className={outerClassName}>
+      <div className='center'>
+        <h2 className='title'>Markdown Preview</h2>
+        <span>ハイライト対象言語:{highlightLang}</span>
+      </div>
+      <div className='md-view'>
         <ReactMarkdown
           children={children}
           components={{
@@ -69,8 +70,8 @@ const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ c
             },
           }}
         />
-      </Box>
-    </>
+      </div>
+    </Box>
   );
 };
 
