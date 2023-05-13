@@ -1,16 +1,23 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import styled from 'styled-components'
 // ハイライトカラー設定
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 
 // ハイライト対象言語の設定
 import javascript from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript';
 import css from 'react-syntax-highlighter/dist/esm/languages/hljs/css';
-SyntaxHighlighter.registerLanguage('js', javascript);
+import python from 'react-syntax-highlighter/dist/esm/languages/hljs/python';
+import sql from 'react-syntax-highlighter/dist/esm/languages/hljs/sql';
+import csharp from 'react-syntax-highlighter/dist/esm/languages/hljs/csharp';
+SyntaxHighlighter.registerLanguage('javascript', javascript);
 SyntaxHighlighter.registerLanguage('css', css);
-const highlightLang = 'js/css'
+SyntaxHighlighter.registerLanguage('python', python);
+SyntaxHighlighter.registerLanguage('sql', sql);
+SyntaxHighlighter.registerLanguage('csharp', csharp);
+/** ハイライト対象言語 */
+export const highlightTargetLang = 'javascript/css/python/sql/csharp';
 
 interface MarkdownWithCodeHighlightProps {
   children: string;
@@ -46,10 +53,6 @@ const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ c
 
   return (
     <Box className={outerClassName}>
-      <div className='center'>
-        <h2 className='title'>Markdown Preview</h2>
-        <span>ハイライト対象言語:{highlightLang}</span>
-      </div>
       <div className='md-view'>
         <ReactMarkdown
           children={children}

@@ -1,17 +1,17 @@
 import React, { useState, ChangeEvent } from 'react';
-import MarkdownWithCodeHighlight from '../Atoms/MarkdownWithCodeHighlight';
+import MarkdownWithCodeHighlight, { highlightTargetLang } from '../Atoms/MarkdownWithCodeHighlight';
 import TextAreaContainer from '../Atoms/TextAreaContainer';
 import styled from 'styled-components';
 
 const Box = styled.div`
-  display: flex;
-  .txt {
-    margin-top: 75px;
+  .txt,.md {
     width: 49%;
   }
-  .md {
-    width: 49%;
-    min-width: auto;
+  .flex {
+    display: flex;
+  }
+  .center {
+    text-align: center;
   }
 `;
 
@@ -24,8 +24,19 @@ function MarkdownWithCodeHighlightEdit() {
 
   return (
     <Box>
-      <TextAreaContainer outerClassName='txt' value={text} onChange={handleChange} />
-      <MarkdownWithCodeHighlight outerClassName='md'>{text}</MarkdownWithCodeHighlight>
+      <div className='flex'>
+        <div className='txt center'>
+          <h2>Contents</h2>
+          <span>ハイライト対象:{highlightTargetLang}</span>
+        </div>
+        <div className='md'>
+          <h2 className='center'>Markdowm preview</h2>
+        </div>
+      </div>
+      <div className='flex'>
+        <TextAreaContainer outerClassName='txt' value={text} onChange={handleChange} />
+        <MarkdownWithCodeHighlight outerClassName='md'>{text}</MarkdownWithCodeHighlight>
+      </div>
     </Box>
   );
 }

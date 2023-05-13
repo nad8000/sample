@@ -27,7 +27,9 @@ function MarkdownWithCodeHighlightEditor() {
     <Box>
       <div className='center'>タイトル：<Input value={text} onChange={onChangeTextarea} placeholder='記事タイトルを入力してください...'/><Button onClick={()=>{onClickSave()}}>保存</Button></div>
       <MarkdownWithCodeHighlightEdit />
-      <div className='center'><Button onClick={()=>{navigate('/list')}}>戻る</Button></div>
+      <div className='center'>
+        <Button onClick={()=>{navigate('/list')}}>戻る</Button>
+      </div>
     </Box>
   );
 }

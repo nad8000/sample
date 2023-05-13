@@ -5,7 +5,9 @@ const Box = styled.div`
   text-align: center;
   .textarea {
     width: 96%;
-    min-height: 97%;
+    min-height: 500px;
+    margin: 10px auto;
+    padding: 7px;
   }
 `;
 
