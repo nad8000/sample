@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
 interface MarkdownProps {
   children: string;
@@ -9,7 +9,7 @@ interface MarkdownProps {
 
 /** @deprecated シンタックスハイライトなし */
 const MarkdownView: React.FC<MarkdownProps> = ({ children }) => {
-  const Box = styled.div`
+  const DivWrapper = styled.div`
     border: 3px #ccc solid;
     margin: 10px auto;
     padding: 5px;
@@ -25,14 +25,14 @@ const MarkdownView: React.FC<MarkdownProps> = ({ children }) => {
   `;
   
   return (
-    <Box>
+    <DivWrapper>
       <h2 className='title'>Markdown Preview</h2>
       <div className='md'>
         <ReactMarkdown >
           {children}
         </ReactMarkdown>
       </div>
-    </Box>
+    </DivWrapper>
   );
 };
 

@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
-const Box = styled.div`
+const DivWrapper = styled.div`
   text-align: center;
   .textarea {
     width: 96%;
@@ -20,14 +20,14 @@ interface TextareaProps {
 
 const TextAreaContainer: React.FC<TextareaProps> = ({ value, onChange, placeholder = 'マークダウンで入力して下さい...', outerClassName = '' }) => {
   return (
-    <Box className={outerClassName}>
+    <DivWrapper className={outerClassName}>
       <textarea
         className={'textarea'}
         value={value}
         onChange={onChange}
         placeholder={placeholder}
       />
-    </Box>
+    </DivWrapper>
   );
 };
 

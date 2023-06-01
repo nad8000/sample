@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 
-const Box = styled.div`
+const DivWrapper = styled.div`
   margin: auto;
   text-align: center;
 `;
@@ -17,7 +17,7 @@ interface TextareaProps {
 
 const Textarea: React.FC<TextareaProps> = ({ value, onChange, rows = 100, cols = 100, placeholder = 'マークダウンで入力して下さい...', outerClassName = '' }) => {
   return (
-    <Box className={outerClassName}>
+    <DivWrapper className={outerClassName}>
       <textarea
         value={value}
         rows={rows}
@@ -26,7 +26,7 @@ const Textarea: React.FC<TextareaProps> = ({ value, onChange, rows = 100, cols =
         placeholder={placeholder}
         className={`textarea`}
       />
-    </Box>
+    </DivWrapper>
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 // ハイライトカラー設定
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
@@ -25,7 +25,7 @@ interface MarkdownWithCodeHighlightProps {
 }
 
 const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ children, outerClassName='' }) => {
-  const Box = styled.div`
+  const DivWrapper = styled.div`
     .md-view {
       border: 3px #ccc solid;
       margin: 10px auto;
@@ -52,7 +52,7 @@ const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ c
   };
 
   return (
-    <Box className={outerClassName}>
+    <DivWrapper className={outerClassName}>
       <div className='md-view'>
         <ReactMarkdown
           children={children}
@@ -74,7 +74,7 @@ const MarkdownWithCodeHighlight: React.FC<MarkdownWithCodeHighlightProps> = ({ c
           }}
         />
       </div>
-    </Box>
+    </DivWrapper>
   );
 };
 

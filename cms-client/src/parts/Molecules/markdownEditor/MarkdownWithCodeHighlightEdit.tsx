@@ -1,9 +1,9 @@
 import React, { useState, ChangeEvent } from 'react';
-import MarkdownWithCodeHighlight, { highlightTargetLang } from '../Atoms/MarkdownWithCodeHighlight';
-import TextAreaContainer from '../Atoms/TextAreaContainer';
-import styled from 'styled-components';
+import MarkdownWithCodeHighlight, { highlightTargetLang } from '../../Atoms/markDown/MarkdownWithCodeHighlight';
+import TextAreaContainer from '../../Atoms/textarea/TextAreaContainer';
+import styled from '@emotion/styled';
 
-const Box = styled.div`
+const Div = styled.div`
   .txt,.md {
     width: 49%;
   }
@@ -23,7 +23,7 @@ function MarkdownWithCodeHighlightEdit() {
   };
 
   return (
-    <Box>
+    <Div>
       <div className='flex'>
         <div className='txt center'>
           <h2>Contents</h2>
@@ -37,7 +37,7 @@ function MarkdownWithCodeHighlightEdit() {
         <TextAreaContainer outerClassName='txt' value={text} onChange={handleChange} />
         <MarkdownWithCodeHighlight outerClassName='md'>{text}</MarkdownWithCodeHighlight>
       </div>
-    </Box>
+    </Div>
   );
 }
 

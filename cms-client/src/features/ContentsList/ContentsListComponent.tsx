@@ -1,7 +1,7 @@
 import * as React from 'react';
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { useNavigate } from 'react-router-dom'
-import Button from '../../parts/Atoms/Button';
+import Button from '../../parts/Atoms/button/Button';
 
 
 export default function PrimarySearchAppBar() {
@@ -9,7 +9,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <div>
-      <Button onClick={()=>{navigate('/editor');}}>記事の新規作成</Button>
+      <Button onClick={()=>{navigate('/edit');}}>記事の新規作成</Button>
     </div>
   );
 }

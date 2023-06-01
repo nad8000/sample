@@ -4,11 +4,13 @@ import { Provider } from 'react-redux';
 import { store } from './app/store';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createGlobalStyle } from 'styled-components';
+import { Global, css } from '@emotion/react';
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = css`
   body {
     background-color: #dfd;
+    margin: 0;
+    padding: 0;
   }
 
   code {
@@ -22,7 +24,7 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <GlobalStyle />
+    <Global styles={GlobalStyle}/>
     <Provider store={store}>
       <App />
     </Provider>
