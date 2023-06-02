@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from '@emotion/styled'
 import Header from '../Organisms/header/Header'
 import Footer from '../Organisms/footer/Footer'
@@ -12,13 +12,7 @@ import { BlogInfo } from '../../types/BlogInfo';
  * @returns {React.Component}
  */
 const ListPage: React.FC = ({}) => {
-  const Body = styled.body`
-    display: block;
-    margin: 0;
-    padding: 0;
-  `;
-
-  const dataList:BlogInfo[] = [
+  const [dataList, setDataList] = useState([
     {
       title : 'よくわかる記事タイトル1',
       blogId : 1,
@@ -40,7 +34,13 @@ const ListPage: React.FC = ({}) => {
       tagId : 3,
       publishDate : '2023/6/1 22:44',
     },
-  ];
+  ]);
+
+  const Body = styled.body`
+    display: block;
+    margin: 0;
+    padding: 0;
+  `;
 
   return (
     <Body>
