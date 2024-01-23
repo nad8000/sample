@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@emotion/styled';
 // component
-import TitleInput from '../Molecules/textInput/TitleInput';
-import MarkdownWithCodeHighlightEdit from '../Molecules/markdownEditor/MarkdownWithCodeHighlightEdit';
+import TitleInput from '../Organisms/textInput/TitleInput';
+import MarkdownWithCodeHighlightEdit from '../Organisms/markdownEditor/MarkdownWithCodeHighlightEdit';
 
 function MarkdownWithCodeHighlightEditor() {
 

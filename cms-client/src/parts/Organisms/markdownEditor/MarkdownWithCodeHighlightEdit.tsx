@@ -1,5 +1,5 @@
 import React, { useState, ChangeEvent } from 'react';
-import MarkdownWithCodeHighlight, { highlightTargetLang } from '../../Atoms/markDown/MarkdownWithCodeHighlight';
+import MarkdownWithCodeHighlight, { highlightTargetLang } from '../markDown/MarkdownWithCodeHighlight';
 import TextAreaContainer from '../../Atoms/textarea/TextAreaContainer';
 import styled from '@emotion/styled';
 

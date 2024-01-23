@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 import Header from '../Organisms/header/Header'
 import Footer from '../Organisms/footer/Footer'
 
-
+// CSSPropatiesでやりたい
 const Body = styled.body`
   display: block;
   margin: 0;

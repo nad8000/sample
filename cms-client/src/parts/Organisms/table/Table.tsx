@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled'
-import { BlogInfo } from '../../../types/BlogInfo';
+import { BlogInfo } from '../../../reducks/Editor/types';
 
 
 interface InputProps {

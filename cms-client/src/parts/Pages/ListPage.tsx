@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import styled from '@emotion/styled'
 import Header from '../Organisms/header/Header'
 import Footer from '../Organisms/footer/Footer'
-import Table from '../Atoms/table/Table'
-import { BlogInfo } from '../../types/BlogInfo';
+import Table from '../Organisms/table/Table'
+import { BlogInfo } from '../../reducks/Editor/types';
 
 
 
