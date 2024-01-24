@@ -6,29 +6,22 @@
       "type": "shell",
       "command": "npm ci",
       "options": {
-        "cwd": "${workspaceFolder}/"
+        "cwd": "${workspaceFolder}/cms-client"
       },
       "group": "build",
       "problemMatcher": [],
-			"detail": "rootのci"
+			"detail": "client ci"
 		},
 		{
-			"type": "npm",
-			"script": "ci",
-			"path": "cms-client",
-			"group": "none",
-			"problemMatcher": [],
-			"label": "npm: ci - cms-client",
-			"detail": "cms-clientのci"
+      "label": "npm ci",
+      "type": "shell",
+      "command": "npm ci",
+      "options": {
+        "cwd": "${workspaceFolder}/cms-server"
+      },
+      "group": "build",
+      "problemMatcher": [],
+			"detail": "server ci"
 		},
-		{
-			"type": "npm",
-			"script": "ci",
-			"path": "cms-server",
-			"group": "none",
-			"problemMatcher": [],
-			"label": "npm: ci - cms-server",
-			"detail": "cms-serverのci"
-		}
 	]
 }
